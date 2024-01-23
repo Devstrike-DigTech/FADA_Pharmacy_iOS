@@ -11,6 +11,8 @@
 		45DBF3DC2B5F0BC100C155ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF3DB2B5F0BC100C155ED /* ContentView.swift */; };
 		45DBF3DE2B5F0BC500C155ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DBF3DD2B5F0BC500C155ED /* Assets.xcassets */; };
 		45DBF3E12B5F0BC500C155ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DBF3E02B5F0BC500C155ED /* Preview Assets.xcassets */; };
+		45E5D7842B5F6F9C00C5BB5A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5D7832B5F6F9C00C5BB5A /* SplashScreen.swift */; };
+		45E5D7872B5F720D00C5BB5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5D7862B5F720D00C5BB5A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		45DBF3DB2B5F0BC100C155ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45DBF3DD2B5F0BC500C155ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DBF3E02B5F0BC500C155ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45E5D7832B5F6F9C00C5BB5A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		45E5D7862B5F720D00C5BB5A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		45DBF3D82B5F0BC100C155ED /* FADA Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				45E5D7852B5F71F800C5BB5A /* Utils */,
 				45DBF3D92B5F0BC100C155ED /* FADA_PharmacyApp.swift */,
 				45DBF3DB2B5F0BC100C155ED /* ContentView.swift */,
 				45DBF3DD2B5F0BC500C155ED /* Assets.xcassets */,
 				45DBF3DF2B5F0BC500C155ED /* Preview Content */,
+				45E5D7832B5F6F9C00C5BB5A /* SplashScreen.swift */,
 			);
 			path = "FADA Pharmacy";
 			sourceTree = "<group>";
@@ -65,6 +71,14 @@
 				45DBF3E02B5F0BC500C155ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45E5D7852B5F71F800C5BB5A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45E5D7862B5F720D00C5BB5A /* Colors.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E5D7842B5F6F9C00C5BB5A /* SplashScreen.swift in Sources */,
+				45E5D7872B5F720D00C5BB5A /* Colors.swift in Sources */,
 				45DBF3DC2B5F0BC100C155ED /* ContentView.swift in Sources */,
 				45DBF3DA2B5F0BC100C155ED /* FADA_PharmacyApp.swift in Sources */,
 			);
@@ -264,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FADA Pharmacy/Preview Content\"";
@@ -273,6 +290,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FADA Pharmacy/Preview Content\"";
@@ -302,6 +321,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
