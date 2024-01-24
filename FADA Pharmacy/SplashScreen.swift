@@ -12,41 +12,45 @@ struct SplashScreen: View {
     @State private var opacity = 0.5
     @State private var size = 0.8
     
+    @StateObject private var dataStore = DataStore()
+    
     var body: some View {
         if isActive{
-            ContentView()
-        }else{
-            ZStack{
-                FADA_PRIMARY
-                    .edgesIgnoringSafeArea(.all)
-                VStack{
+            if !dataStore.isFirstTime {
+                ContentView()
+            }else{
+                OnBoardingScreen()
+            }}else{
+                ZStack{
+                    FADA_PRIMARY
+                        .edgesIgnoringSafeArea(.all)
                     VStack{
-                        Image("logo")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 256, height: 256)
-                            .clipShape(Circle())
+                        VStack{
+                            Image("logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 256, height: 256)
+                                .clipShape(Circle())
+                        }
+                        .scaleEffect(size)
+                        .opacity(opacity)
+                        .onAppear{
+                            withAnimation(.easeIn(duration: 1.2)){
+                                self.size = 0.9
+                                self.opacity = 1.0
+                            }
+                        }
                     }
-                    .scaleEffect(size)
-                    .opacity(opacity)
-                    .onAppear{
-                        withAnimation(.easeIn(duration: 1.2)){
-                            self.size = 0.9
-                            self.opacity = 1.0
+                }
+                .onAppear{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                        withAnimation{
+                            isActive = true
+                            
                         }
                     }
                 }
             }
-            .onAppear{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-                    withAnimation{
-                        isActive = true
-                    }
-                }
-            }
-        }
-        
-        
     }
 }
 

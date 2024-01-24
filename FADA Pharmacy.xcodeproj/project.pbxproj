@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4592BA952B60B34D0094EA88 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4592BA942B60B34D0094EA88 /* Common.swift */; };
 		45DBF3DA2B5F0BC100C155ED /* FADA_PharmacyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF3D92B5F0BC100C155ED /* FADA_PharmacyApp.swift */; };
 		45DBF3DC2B5F0BC100C155ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF3DB2B5F0BC100C155ED /* ContentView.swift */; };
 		45DBF3DE2B5F0BC500C155ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DBF3DD2B5F0BC500C155ED /* Assets.xcassets */; };
 		45DBF3E12B5F0BC500C155ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DBF3E02B5F0BC500C155ED /* Preview Assets.xcassets */; };
+		45E5A7F42B60A556008531C3 /* OnBoardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5A7F32B60A556008531C3 /* OnBoardingStep.swift */; };
+		45E5A7F62B60A5E7008531C3 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5A7F52B60A5E7008531C3 /* OnBoardingScreen.swift */; };
 		45E5D7842B5F6F9C00C5BB5A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5D7832B5F6F9C00C5BB5A /* SplashScreen.swift */; };
 		45E5D7872B5F720D00C5BB5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5D7862B5F720D00C5BB5A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4592BA942B60B34D0094EA88 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		45DBF3D62B5F0BC100C155ED /* FADA Pharmacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FADA Pharmacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF3D92B5F0BC100C155ED /* FADA_PharmacyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FADA_PharmacyApp.swift; sourceTree = "<group>"; };
 		45DBF3DB2B5F0BC100C155ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45DBF3DD2B5F0BC500C155ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DBF3E02B5F0BC500C155ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45E5A7F32B60A556008531C3 /* OnBoardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStep.swift; sourceTree = "<group>"; };
+		45E5A7F52B60A5E7008531C3 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
 		45E5D7832B5F6F9C00C5BB5A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		45E5D7862B5F720D00C5BB5A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +42,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45AD16F52B60AD84009A074C /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		45DBF3CD2B5F0BC100C155ED = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +68,15 @@
 		45DBF3D82B5F0BC100C155ED /* FADA Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				45AD16F52B60AD84009A074C /* components */,
+				45E5A7F22B60A4A5008531C3 /* data */,
 				45E5D7852B5F71F800C5BB5A /* Utils */,
 				45DBF3D92B5F0BC100C155ED /* FADA_PharmacyApp.swift */,
 				45DBF3DB2B5F0BC100C155ED /* ContentView.swift */,
 				45DBF3DD2B5F0BC500C155ED /* Assets.xcassets */,
 				45DBF3DF2B5F0BC500C155ED /* Preview Content */,
 				45E5D7832B5F6F9C00C5BB5A /* SplashScreen.swift */,
+				45E5A7F52B60A5E7008531C3 /* OnBoardingScreen.swift */,
 			);
 			path = "FADA Pharmacy";
 			sourceTree = "<group>";
@@ -73,10 +89,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		45E5A7F22B60A4A5008531C3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				45E5A7F32B60A556008531C3 /* OnBoardingStep.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		45E5D7852B5F71F800C5BB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				45E5D7862B5F720D00C5BB5A /* Colors.swift */,
+				4592BA942B60B34D0094EA88 /* Common.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,10 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E5A7F62B60A5E7008531C3 /* OnBoardingScreen.swift in Sources */,
 				45E5D7842B5F6F9C00C5BB5A /* SplashScreen.swift in Sources */,
 				45E5D7872B5F720D00C5BB5A /* Colors.swift in Sources */,
 				45DBF3DC2B5F0BC100C155ED /* ContentView.swift in Sources */,
+				45E5A7F42B60A556008531C3 /* OnBoardingStep.swift in Sources */,
 				45DBF3DA2B5F0BC100C155ED /* FADA_PharmacyApp.swift in Sources */,
+				4592BA952B60B34D0094EA88 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
